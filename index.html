@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class ="theme-light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Meter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="/FYP/js/zxcvbn.js" ></script>
+    <script src ="/FYP/js/pw_strength.js"></script>
+    <script src="/FYP/js/script.js" defer></script>
+    <script src="/FYP/js/input-pw.js" defer></script>
+</head>
+<body>
+    <header class ="header">
+        <div class = "nav-bar">
+            <div class = "switch-theme">
+                Switch Theme
+            </div>
+        </div>
+    </header>
+    <div class = "page">
+        <div class = "inner__form">
+            <h1 class = "title">Password Strength Meter</h1>
+        <!--Password input field-->
+            <div  id="input-box" class="input-box">
+                <input type="password" id="password" placeholder="Enter your password">
+                <!-- <img src="/FYP/images/eye_dark_close.png" id = "eye_dark_close"> -->
+                     <button id="toggle_button" onclick="toggle()">
+                        <svg class = "icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="60" height="55">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </button>
+            </div>
+        <!--status-->
+            <div class = "infoStrength">
+                <p class="strength__row">
+                    <!--Progress bar-->
+                    <div id="strengthMeter" class = "progress">
+                        <div id = "strengthBar" class = "progress-bar" role="progressbar"></div>
+                    </div>
+                </p>
+                    <!--strength & time crack-->
+                <span id = "PasswordStrength__box">
+                    <strong id ="PasswordStrength__title">Password Strenght: </strong><span id="PasswordStrength__value"></span>
+                </span>
+                
+                <span id = "timeCrack__box">
+                    <strong id ="timeCrack__title">Estimated Time Crack: </strong><span id="timeCrack__value"></span><br>
+                </span> 
+                
+            </div>
+            <!--real__time checkbox-->
+            <div class = "checkbox" style="border-radius: 8px; height: fit-content;">
+                <div class = "rules__checkbox">
+                    <input id ="length" class = "checkbox__input" type = "checkbox" disabled="">
+                    <label for="eighth__char">Contains at least 8 characters</label>
+                </div>
+
+                <div class = "rules__checkbox">
+                    <input id ="digits" class = "checkbox__input" type = "checkbox" disabled="">
+                    <label for="digits">Contains digits</label>
+                </div>
+                <div class = "rules__checkbox">
+                    <input id ="symbols" class = "checkbox__input" type = "checkbox" disabled="">
+                    <label for="symbols">Contains symbols</label>
+                </div>
+                <div class = "rules__checkbox">
+                    <input id ="capital" class = "checkbox__input" type = "checkbox" disabled="">
+                    <label for="captial">Contains capital</label>
+                </div>
+            </div>
+
+            <!--Feedback-->
+            <div class = "Box_Feedback">
+                <!-- <strong>Feedback:</strong> -->
+                <div id = "status" class="secure-status">
+                    <ul id="warningList"></ul>
+                    <ul id="suggestionsList"></ul>
+                </div> 
+            </div>
+
+            <!--HIBP__status-->
+            <div class ="breach__status">
+                <!-- <strong>Breach Status:</strong> -->
+                <span id="HIBP_feedback"></span>
+            </div>
+
+            <!--NIST__guidelines-->
+            <div class ="box-nist">
+                <h3>NIST Compliance Guidelines</h3>
+                <ul>
+                    <li>Minimum 8-character passwords</li>
+                    <li>Allow passwords up to 64 characters</li>
+                    <li>No mandatory character composition rules</li>
+                    <li>No forced periodic password changes unless compromised</li>
+                    <li>Screen against lists of commonly breached passwords</li>
+                    <li>Provide real-time user feedback during password creation</li>
+                    <li>Store passwords securely with salted, slow hash algorithms</li>
+                </ul>
+            </div>
+        </div>   
+    </div>
+
+</body>
+</html>

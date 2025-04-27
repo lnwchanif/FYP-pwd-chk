@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Inria Serif");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline:0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+.title {
+ text-align: center;
+ font-size: 64px;
+ font-family: 'Inria Serif';
+ margin-top: 60px;
+ margin-bottom: 16px;
+}
+
+@media (max-width: 576px) {
+    .input-box {
+      justify-content: space-between;
+    }
+
+    #PasswordStrength__box{
+        position: relative;
+    }
+    
+    #timeCrack__box{
+        left: 8.5%;
+        float: left;
+        text-align: right;
+        position: absolute;
+    }
+  }
+
+@media screen and (max-width: 959px){
+   .page {
+    padding: 0 16px;
+    }
+    .title{
+        font-size: 54px;
+        line-height: 54px;
+    }
+    .password{
+        font-size: 21px;
+    }
+    #PasswordStrength__box{
+
+        position: relative;
+    }
+    
+    #timeCrack__box{
+        left: 56%;
+        float: left;
+        text-align: right;
+        position: absolute;
+    }
+
+}
+
+@media screen and (max-width: 1279px) {
+    .page {
+      padding:0 32px;
+    }
+    .inner__form{
+        padding:40px 0 64px;
+    }
+    .input-box{
+        padding:20px 16px
+    }
+    .password{
+        font-size: 21px;
+    }
+    .checkbox{
+        padding: 20px 16px 16px;
+    }
+  }
+
+@media screen and (max-width: 1439px) {
+    .page {
+      padding:0 40px;
+    }
+  }
+
+.page{
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    padding:0 0px;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+
+.inner__form{
+    padding:0 1rem;
+}
+
+.nav-bar {
+    padding: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+}
+.switch-theme {
+    text-align: right;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    font-size: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+}
+p {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+.input-box {
+    background: #ffffff;
+    border: rgba(30, 50, 80, 0.20) 2px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 805px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin:  auto;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 15px 0;
+    border: 0;
+    outline: 0;
+    font-size: 30px;
+    color: #000000;
+}
+
+.input-box button{
+    cursor: pointer;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    border: none;
+}
+/* https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/ */
+.input-box button:hover{
+    filter: invert(0.5);
+
+}
+
+.infoStrength {
+    width: 90%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+#PasswordStrength__box{
+    margin-right: 20%;
+    position: relative;
+}
+
+#timeCrack__box{
+    left: 56%;
+    float: left;
+    text-align: right;
+    position: absolute;
+}
+
+#strengthMeter {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+}
+
+#strengthBar {
+    display: block !important;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+    border-radius: 16px;
+}
+
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Box_Feedback{
+    width: 90%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#warningList {
+    list-style-type: disc;
+    margin-bottom: 0;
+  }
+  
+#suggestionsList {
+    margin-top: 0;
+
+  }
+
+#HIBP_feedback{
+    display: block;
+    text-align: center;
+}
+
+.box-nist {
+    width: 90%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+
+}
+
+.checkbox{
+    background: #ffffffaa;
+    align-items: center;
+    border-radius: 16px;
+    /* margin-top: 12px;
+    margin-bottom: 12px;
+    gap: 12px 12px;
+    justify-content: flex-start; */
+    width: 90%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 85%;
+    background: #ffffff;
+    border-radius: 25px;
+    margin-left: auto;
+    padding: 5px;
+    min-height: 20px;
+    /* border: #000000 1px solid; */
+}
+
+
+.rules__checkbox{
+    padding-right: 20px;
+}
+
+.rules__checkbox + label::before {
+    content: "";
+    width: 100%;
+    align-items: center;
+}
+
+.rules__checkbox.checked{
+    opacity: 0.5;
+
+}
+
