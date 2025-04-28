@@ -2,6 +2,8 @@
 function evaluatePasswordStrength(password) {
     if (!password){
         return { percent: '0%', feedback: '', color: '' };
+        // return '';
+
     }
     // if (password.length < 8) {
     //     return { percent: 0, feedback: "Very weak", color: "red" };
@@ -24,8 +26,11 @@ function evaluatePasswordStrength(password) {
         default: feedbackText = "Undefined"; color = "#ccc";
     }
 
+
+        
+
     return { percent: percent, feedback: feedbackText, color: color };
- 
+
 
 }
 

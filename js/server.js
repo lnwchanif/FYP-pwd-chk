@@ -35,12 +35,6 @@ app.post('/check-password', async (req, res) => {
     }
 });
 
-// Read your certificate and key files. Update the paths accordingly.
-const options = {
-    key: fs.readFileSync('path/to/your-private-key.pem'),
-    cert: fs.readFileSync('path/to/your-certificate.pem')
-  };
-  
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

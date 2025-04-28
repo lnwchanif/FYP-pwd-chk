@@ -18,8 +18,11 @@ document.getElementById('password').addEventListener('input', async function() {
     //Bar
     //Update Bar
     const bar = document.getElementById('strengthBar');
+    const box__password = document.getElementById('input-box');
+
     bar.style.width = strength.percent;
     bar.style.backgroundColor = strength.color;
+    box__password.style.borderColor = strength.color;
 
 
     // display estimated crack time based on zxcvbn
