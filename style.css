@@ -113,11 +113,11 @@ div {
 }
 
 .nav-bar {
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
 }
 .form-check.form-switch {
-    text-align: right;
+    float: right;
 }
 
 body{
