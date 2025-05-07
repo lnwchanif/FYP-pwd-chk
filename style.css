@@ -306,3 +306,7 @@ p {
 #status{
     text-align: center;
 }
+.warningIcon{
+    display: block;
+    margin: auto;
+}
