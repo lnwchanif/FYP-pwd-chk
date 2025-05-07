@@ -113,11 +113,12 @@ div {
 }
 
 .nav-bar {
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
 }
 .form-check.form-switch {
-    float: right;
+    display: flex;
+    justify-content: right;
 }
 
 body{
