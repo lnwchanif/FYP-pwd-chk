@@ -1,3 +1,25 @@
+/*https://getbootstrap.com/docs/5.3/customize/color-modes/ */
+/*https://github.com/404GamerNotFound/bootstrap-5.3-dark-mode-light-mode-switch/tree/main*/
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    const htmlElement = document.documentElement;
+    const switchElement = document.getElementById('themeSwitch');
+    
+    // Set the default theme to light
+    const currentTheme = localStorage.getItem('bsTheme') || 'light';
+    htmlElement.setAttribute('data-bs-theme', currentTheme);
+    switchElement.checked = currentTheme === 'dark';
+
+    switchElement.addEventListener('change', function () {
+        if (this.checked) {
+            htmlElement.setAttribute('data-bs-theme', 'dark');
+            localStorage.setItem('bsTheme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-bs-theme', 'light');
+            localStorage.setItem('bsTheme', 'light');
+        }
+    });    
+})
 // Listen for password input events
 document.getElementById('password').addEventListener('input', async function() {
     const password = this.value;
