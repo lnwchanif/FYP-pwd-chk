@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Inria Serif");
 @import url("https://fonts.googleapis.com/css?family=Inter");
 
-body[data-bs-theme="dark"] .input-box input {
+[data-bs-theme="dark"] .input-box input {
     background: transparent;
     color: white;
 
 }
-body[data-bs-theme="dark"] .input-box {
+[data-bs-theme="dark"] .input-box {
     background: transparent;
     border: #ffffff 2px solid;
 }
 
- body[data-bs-theme="dark"] .form-check-input:checked {
+ [data-bs-theme="dark"] .form-check-input:checked {
     border-color: #9f9f9f;
  }
 
