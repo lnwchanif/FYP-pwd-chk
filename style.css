@@ -117,6 +117,13 @@ div {
     padding: 20px;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
 }
+.text__theme__light{
+    margin-right: 50px;
+}
+
+.text__theme__dark{
+    margin-left: 10px;
+}
 
 .form-switch .form-check-input:checked{
     background-color: rgb(163, 163, 163);
@@ -261,32 +268,17 @@ p {
     text-align: justify;
 
 }
-
-.checkbox{
-    background: #ffffffaa;
-    align-items: center;
-    border-radius: 16px;
-    /* margin-top: 12px;
-    margin-bottom: 12px;
-    gap: 12px 12px;
-    justify-content: flex-start; */
-    width: 90%;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .checkbox {
     display: flex;
     align-items: center;
     text-align: center;
     margin: auto;
     width: 85%;
-    background: #ffffff;
     border-radius: 25px;
-    margin-left: auto;
     padding: 5px;
     min-height: 20px;
+    max-width: 830px;
+
     /* border: #000000 1px solid; */
 }
 
