@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Inria Serif");
 @import url("https://fonts.googleapis.com/css?family=Inter");
 
+body[data-bs-theme="dark"] .input-box input {
+    background: transparent;
+    color: white;
+
+  }
+body[data-bs-theme="dark"] .input-box {
+    background: transparent;
+    border: #ffffff 2px solid;
+}
+/* body[data-bs-theme="dark"] .input-box button svg {
+  /* color: #000000;}
+   */
 
 div {
     margin: 0;
