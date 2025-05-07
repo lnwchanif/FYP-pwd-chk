@@ -287,6 +287,10 @@ p {
     margin-right: 45px;
 }
 
+.checkbox__input{
+    margin-right: 5px;
+}
+
 .rules__checkbox + label::before {
     content: "";
     width: 100%;
