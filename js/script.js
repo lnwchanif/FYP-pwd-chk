@@ -30,12 +30,14 @@ document.getElementById('password').addEventListener('input', async function() {
     const strength = evaluatePasswordStrength(password);
     const input__box = document.getElementById('input-box');
     const toggle_button = document.getElementById('toggle_button');
+    const clear_button = document.getElementById('clear_button')
+
 
     pwStrength.textContent = strength.feedback;
     pwStrength.style.color = strength.color;
     input__box.style.borderColor = strength.color; //change border color box according to strength
     toggle_button.style.color = strength.color; //change eye icon color accoding to strength
-
+    clear_button.style.color = strength.color; // change clear button color according to strenght
 
     //Bar
     //Update Bar
