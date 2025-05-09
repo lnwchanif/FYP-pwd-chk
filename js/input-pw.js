@@ -50,8 +50,5 @@ function clearPasswordField(){
 clear.onclick = function (){
   // wipe the field and all the dynamic feedback
   clearPasswordField();
-  passwordField.value = '';
-  HIBP_feedback.textContent='';
-  warningList.textContent = '';
-  suggestionsList.innerHTML = '';
+
   }
