@@ -34,6 +34,7 @@ div {
  margin-bottom: 16px;
 }
 
+/* 
 @media (max-width: 576px) {
     .input-box {
       justify-content: space-between;
@@ -98,8 +99,7 @@ div {
     .page {
       padding:0 40px;
     }
-  }
-
+  } */
 .page{
     position: relative;
     width: 100%;
