@@ -40,7 +40,16 @@ input__toggle.onclick = function(){
 //click clear button to clear input
 //2. onclick event and document.getElementById() method
 const clear = document.getElementById('clear_button');
+
+//https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/dispatchEvent
+function clearPasswordField(){
+  passwordField.value = ''
+  password.dispatchEvent(new Event('input'));
+}
+
 clear.onclick = function (){
+  // wipe the field and all the dynamic feedback
+  clearPasswordField();
   passwordField.value = '';
   HIBP_feedback.textContent='';
   warningList.textContent = '';
