@@ -147,7 +147,7 @@ document.getElementById('password').addEventListener('input', async function() {
     warningList.textContent = feedback.warning;
 
     // 3) Suggestions (array → <li>…</li>)
-    suggestionsList.innerHTML = (feedback.suggestions || []).map(s => `<br>${s}</br>`).join('');
+    suggestionsList.innerHTML = (feedback.suggestions || []).map(s => `<li>${s}</li>`).join('');
     
 
     //clear if empty
