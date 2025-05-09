@@ -35,3 +35,16 @@ input__toggle.onclick = function(){
         </svg>`
       }
 }
+
+//https://www.geeksforgeeks.org/html-clearing-the-input-field/
+//click clear button to clear input
+//2. onclick event and document.getElementById() method
+const clear = document.getElementById('clear_button');
+clear.onclick = function (){
+     document.getElementById('password').value = '';
+  }
+
+
+        
+      }
+}
