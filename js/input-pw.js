@@ -41,10 +41,8 @@ input__toggle.onclick = function(){
 //2. onclick event and document.getElementById() method
 const clear = document.getElementById('clear_button');
 clear.onclick = function (){
-     document.getElementById('password').value = '';
+  passwordField.value = '';
+  HIBP_feedback.textContent='';
+  warningList.textContent = '';
+  suggestionsList.innerHTML = '';
   }
-
-
-        
-      }
-}
