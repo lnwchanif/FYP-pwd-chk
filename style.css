@@ -69,6 +69,7 @@ div {
         float: left !important;
         text-align: right !important;
         position: relative !important;
+        display: block;
     }
 
 
