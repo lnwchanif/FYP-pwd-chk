@@ -5,9 +5,9 @@ function evaluatePasswordStrength(password) {
         // return '';
 
     }
-    // if (password.length < 8) {
-    //     return { percent: 0, feedback: "Very weak", color: "red" };
-    // }
+    if (password.length < 8) {
+        return { percent: 0, feedback: "Very weak: 8 characters requried", color: "red" };
+    }
 
     //call zxcvbn
     const result = zxcvbn(password);
