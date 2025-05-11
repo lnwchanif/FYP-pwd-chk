@@ -34,8 +34,25 @@ div {
  margin-bottom: 16px;
 }
 
-/* 
-@media (max-width: 576px) {
+/* https://getbootstrap.com/docs/5.0/layout/breakpoints/#between-breakpoints */
+/*https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .input-box input {
+        width: 100%;
+        padding: 15px 0;
+        border: 0;
+        outline: 0;
+        font-size: 20px !important;
+        color: #000000;   
+    }
+
+    .clear_field_button, .icon{
+        width: 50px;
+        height: 30px;
+    }
+
     .input-box {
       justify-content: space-between;
     }
@@ -50,56 +67,13 @@ div {
         text-align: right;
         position: absolute;
     }
-  }
 
-@media screen and (max-width: 959px){
-   .page {
-    padding: 0 16px;
-    }
-    .title{
-        font-size: 54px;
-        line-height: 54px;
-    }
-    .password{
-        font-size: 21px;
-    }
-    #PasswordStrength__box{
 
-        position: relative;
-    }
-    
-    #timeCrack__box{
-        left: 56%;
-        float: left;
-        text-align: right;
-        position: absolute;
-    }
-
-}
-
-@media screen and (max-width: 1279px) {
-    .page {
-      padding:0 32px;
-    }
-    .inner__form{
-        padding:40px 0 64px;
-    }
-    .input-box{
-        padding:20px 16px
-    }
-    .password{
-        font-size: 21px;
-    }
-    .checkbox{
-        padding: 20px 16px 16px;
+    .rules__checkbox{
+        margin-right: 20px !important;
     }
   }
 
-@media screen and (max-width: 1439px) {
-    .page {
-      padding:0 40px;
-    }
-  } */
 .page{
     position: relative;
     width: 100%;
