@@ -44,28 +44,28 @@ div {
         padding: 15px 0;
         border: 0;
         outline: 0;
-        font-size: 20px !important;
+        font-size: 16px !important;
         color: #000000;   
     }
 
-    .clear_field_button, .icon{
+
+
+    /* .clear_field_button, .icon{
         width: 50px;
         height: 30px;
-    }
+    } */
 
     .input-box {
       justify-content: space-between;
     }
 
-    #PasswordStrength__box{
-        position: relative;
-    }
+
     
     #timeCrack__box{
-        left: 8.5%;
-        float: left;
-        text-align: right;
-        position: absolute;
+        left: 8.5% !important;
+        float: left !important;
+        text-align: right !important;
+        position: relative !important;
     }
 
 
