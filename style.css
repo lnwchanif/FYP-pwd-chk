@@ -39,6 +39,9 @@ div {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .title{
+        font-size: 50px;
+    }
     .input-box input {
         width: 100%;
         padding: 15px 0;
@@ -71,6 +74,28 @@ div {
 
     .rules__checkbox{
         margin-right: 20px !important;
+    }
+
+    
+    #HIBP_feedback{
+        font-size: 18px !important;
+    }
+
+    #status{
+        font-size: 14px;
+    }
+
+    #warningList, #suggestionsList{
+        padding-left: 10px;
+    }
+    .box-nist{
+        text-align: left !important;
+        font-size: 15px;
+        width: 90% !important;
+    }
+
+    ul{
+        padding-left: 10px !important;
     }
   }
 
