@@ -54,6 +54,7 @@ div {
     
     .icon, .clear_field_button{
         stroke: currentColor !important;
+        stroke-width: 1 !important;
     }
 
 
