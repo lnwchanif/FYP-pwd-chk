@@ -39,7 +39,7 @@ div {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 3) {
- {
+ 
     .title{
         font-size: 50px;
     }
