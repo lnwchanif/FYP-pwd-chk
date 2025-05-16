@@ -50,6 +50,11 @@ div {
         font-size: 16px !important;
         color: #000000;   
     }
+    
+    .icon, .clear_field_button{
+        stroke: currentColor !important;
+    }
+
 
 
 
