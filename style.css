@@ -52,10 +52,10 @@ div {
         color: #000000;   
     }
     
-    /*.icon, .clear_field_button{
+    .icon, .clear_field_button{
         stroke: currentColor !important;
         stroke-width: 1 !important;
-    }*/
+    }
 
 
 
