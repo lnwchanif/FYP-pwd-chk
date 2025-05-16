@@ -72,7 +72,7 @@ div {
 
     
     #timeCrack__box{
-        left: auto !important;
+        left: 1% !important;
         float: left !important;
         text-align: right !important;
         position: relative !important;
