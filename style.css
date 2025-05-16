@@ -43,7 +43,7 @@ div {
     .title{
         font-size: 50px;
     }
-    .input-box #password {
+    .input-box input {
         width: 100%;
         padding: 15px 0;
         border: 0;
