@@ -79,9 +79,13 @@ div {
         display: block;
     }
 
-
+    .checkbox{
+         margin-top: 20px !important;
+         margin-left: 10px !important;
+    }
     .rules__checkbox{
-        margin-right: 20px !important;
+        margin-right: 10% !important;
+
     }
 
     
