@@ -70,7 +70,10 @@ div {
     }
 
 
-    
+    #PasswordStrength__box {
+      margin-right: 10% !important;
+
+    }
     #timeCrack__box{
         left: auto !important;
         float: left !important;
