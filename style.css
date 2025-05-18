@@ -38,7 +38,7 @@ div {
 /*https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints*/
 
 /* Extra small devices (phones, 600px and down) */
-@media screen and (max-device-width:640px), screen and (max-width: 600px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (max-device-width:640px), screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
  
     .title{
         font-size: 50px;
